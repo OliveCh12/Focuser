@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+$primary: rgb(16, 92, 255);
+
+body {
+    margin: 0;
+    // font-family: "San Francisco Text" !important;
+    font-family: "Barlow" !important;
+
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+strong {
+    color: $primary;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+    padding: 0;
+}
+
+
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.wrapper {
+    flex-grow: 1;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./components/slider";
+@import "./components/button";
+@import "./components/card";
+
+
+
+
+
+@import "~bootstrap/scss/bootstrap.scss"
